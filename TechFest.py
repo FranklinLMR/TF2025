@@ -401,6 +401,7 @@ def main(page: ft.Page):
                     )
     ContainerTitle = ft.Container(content=StackTitle, on_click=ShowGame)
     
+    
 
     #Rows & Columns
     MainRow = ft.Row(controls=[ContainerTitle])
