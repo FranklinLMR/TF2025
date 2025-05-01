@@ -397,7 +397,7 @@ def main(page: ft.Page):
                     opacity=0,
                     animate_opacity= 900,
                     animate_position= 950,
-                on_click=rolldares
+                on_click=None
             )
 
     #The Stacks, all the elements
