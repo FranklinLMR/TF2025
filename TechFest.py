@@ -405,6 +405,7 @@ def main(page: ft.Page):
     #Rows & Columns
     MainRow = ft.Row(controls=[ContainerTitle])
 
+
     #Page add
     page.add(MainRow)
     
