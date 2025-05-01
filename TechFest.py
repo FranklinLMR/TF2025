@@ -271,6 +271,15 @@ def main(page: ft.Page):
                 animate_opacity= 400
                 )
 
+#Roll Dares
+    listdares = ["28.mp4","30.mp4","32.mp4","34.mp4","36.mp4","38.mp4","40.mp4","42.mp4","44.mp4"]
+    listtruths = ["2.mp4","4.mp4","6.mp4","8.mp4","10.mp4","12.mp4","14.mp4","16.mp4","18.mp4","20.mp4","22.mp4","24.mp4","26.mp4",]
+    async def rolldares(e):
+        x = r.randint(0,8)
+        rolleddare = listdares[x]
+        await asyncio.sleep(2)
+        falses.content = ft.Video(ft.VideoMedia(resource=f"{rolleddare}"))
+        
     #Advise for the User
     Advise= ft.Container(content=ft.Text(value = "Press the title to begin", 
                         font_family="TODF", 
@@ -356,7 +365,6 @@ def main(page: ft.Page):
                     animate_opacity= 900,
                     animate_position= 950,
                     on_click=None
-                    
                 )
     
     #Card back for dares
